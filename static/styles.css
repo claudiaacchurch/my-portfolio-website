@@ -179,20 +179,18 @@ justify-content: center;
 .card {
     margin: 2% 0;
     flex-basis: 30%;
+    background-color: #bdd2f1;
+    padding: 0.5em;
 }
 
 .card-title {
-    font-size: 1em;
+    font-size: 0.8em;
     color: black;
 }
 
 .card-text {
     font-size: 0.8em;
     color: black;
-}
-
-.card-body {
-    background-color: white;
 }
 
 .hover-card {
@@ -207,9 +205,6 @@ text-decoration: none;
   transform: scale(1.05); /* Increase the size by 5% when hovering */
 }
 
-.card-img-mvc {
-padding-top: 5%;
-}
 /* contact section */
 
 .contact-message {
