@@ -21,6 +21,12 @@ body {
   }
 }
 
+.whole-flex {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
 /* navbar */
 
 #mainNav {
@@ -70,18 +76,12 @@ body {
     gap: 5%;
     text-align: justify;
     font-size: 1rem;
-    margin: 3% 3% 0 3%;
+    margin: 3% 3% 0 0;
     padding: 0;
 }
 
-@media screen and (max-width: 768px) {
-  .about-flex {
-    flex-direction: column;
-  }
-}
-
 .box {
-    flex: 1 1 33.33%;
+    flex: 1 1 33%;
     margin: 2% 0;
     font-size: 1em;
 }
@@ -101,15 +101,13 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .box{
-    margin: 0 3% 0 3%;
-    align-items: center;
-  }
-  .box1 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
+    .about-flex {
+    flex-wrap: wrap;
+    }
+
+    .box {
+    flex-basis: 50%;
+    margin: 0 3%;
     }
 }
 
