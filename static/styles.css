@@ -1,0 +1,401 @@
+/* general styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0a1930;
+    color: #ccd6f6;
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+/* navbar */
+
+#mainNav {
+    margin-bottom: 2em;
+}
+
+.nav-text {
+    color: #ccd6f6;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+.nav-text:hover{
+    color: #0dfcd7;
+}
+
+/* home section */
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap;
+}
+
+.title-name {
+    flex: 1 1 auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    color: #ccd6f6;
+}
+
+.title-profession {
+    flex: 1 1 auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    color: #ccd6f6;
+    opacity: 0.5;
+}
+
+.about-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5%;
+    text-align: justify;
+    font-size: 1rem;
+    margin: 3% 3% 0 3%;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .about-flex {
+    flex-direction: column;
+  }
+}
+
+.box {
+    flex: 1 1 33.33%;
+    margin: 2% 0;
+    font-size: 1em;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 1.8;
+}
+
+.business-box
+{
+    padding-bottom: 5%;
+    border-bottom: 1px solid #F20328;
+    line-height: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .box{
+    margin: 0 3% 0 3%;
+    align-items: center;
+  }
+  .box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    }
+}
+
+.sub-title {
+    font-size: 1.2em;
+    color: #0dfcd7;
+    font-weight: 200;
+}
+
+.box1 > p {
+    flex-grow: 1;
+    margin-bottom: 1em; /* Update the margin-bottom value with a proper unit */
+}
+
+.button-container {
+    display: flex;
+    gap: 2%;
+}
+
+.a-home-btn {
+    text-decoration: none;
+    color: #68ecd0;
+}
+
+.button-container > button {
+    font-size: 0.8em;
+    border: 1px solid #68ecd0;
+    background-color: #0a1930;
+    border-radius: 20px;
+    border-width: 1px;
+    width: 8vw;
+    height: auto;
+    padding: 1%;
+}
+
+.button-container > button:hover {
+    border-color: white;
+}
+
+.a-home-btn:hover {
+    color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+  .button-container > button {
+      width: 15vw;
+  }
+}
+
+/* portfolio section */
+
+.section-header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    font-weight: 200;
+    border-bottom: 1px solid #0dfcd7;
+    margin: 5% 0 5% 3%;
+    color: #0dfcd7;
+}
+
+.portfolio-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5%;
+    margin: 3%;
+    justify-content: center;
+}
+
+.card {
+    margin: 2% 0;
+    min-width: 20%;
+    max-width: 30%;
+    min-height: 20vw;
+}
+
+.card-title {
+    font-size: 1em;
+    color: black;
+}
+
+.card-text {
+    font-size: 0.8em;
+    color: black;
+}
+
+.card-body {
+    background-color: white;
+}
+
+.card-img {
+    min-height: 30vh;
+}
+.hover-card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-card a {
+text-decoration: none;
+}
+
+.hover-card:hover {
+  transform: scale(1.05); /* Increase the size by 5% when hovering */
+}
+
+/* contact section */
+
+.contact-message {
+    width: 30%;
+    margin-left: 5%;
+    color: #ccd6f6;
+    opacity: 1;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    line-height: 1.8;
+}
+
+.contact-flex {
+    display: flex;
+    flex-direction: row;
+    margin: 0 3%;
+    justify-content: space-between;
+}
+
+.form-flex {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    justify-content: left;
+    margin: 2% 0 0 2%;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-fields-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    justify-content: flex-end;
+}
+
+.send-button {
+    padding: 1% 2%;
+    border: 1px solid pink;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+.input {
+    width: 100%;
+    background-color: #4e5b75;
+    opacity: 0.8;
+    border: 0;
+    height: 5vh;
+}
+
+input[type="name"]::placeholder,
+input[type="email"]::placeholder {
+    font-weight: 200;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+input[type="text"]::placeholder,
+#email_content::placeholder {
+    font-weight: 200;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+input[type="name"],
+input[type="email"] {
+    padding: 6%;
+}
+
+input[type="text"],
+#email_content {
+    padding: 3%;
+}
+
+.send-button {
+    background-color: #0a1930;
+    border: 1px solid #0dfcd7;
+    color: #0dfcd7;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.send-button:hover {
+    color: white;
+    border-color: white;
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.form-field {
+    flex: 1;
+    margin-bottom: 3%;
+    font-size: 1.2em;
+}
+
+.subject-field {
+    flex-basis: 100%;
+}
+
+.message-field {
+    flex-basis: 100%;
+}
+
+textarea {
+    min-height: 20vh;
+}
+
+.contact-details-flex {
+    display: flex;
+    flex-basis: 40%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 3%;
+    border-top: 2px solid #F20328;
+    border-left: 2px solid #F20328;
+    font-weight: 200;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.contact-details-label {
+    font-size: 1.5em;
+}
+
+.icon-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    margin-top: 3%;
+}
+
+.icon-row > a {
+    text-decoration: none;
+    color: white;
+    padding: 0.8% 0.8% 4% 0.8%;
+}
+
+.icon-row > a:hover {
+    background-color: white;
+    color: #0a1930;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-flex {
+        display: flex;
+        flex-direction: column;
+        margin: 0 3%;
+        justify-content: center;
+    }
+  .contact-message {
+        width: 80%;
+   }
+   .contact-details-flex {
+       margin-top: 3%;
+   }
+}
+/* footer */
+.footer-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    opacity: 0.5;
+    margin: 5% 3% auto auto;
+}
