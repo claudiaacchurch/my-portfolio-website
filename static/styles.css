@@ -182,9 +182,7 @@ body {
 
 .card {
     margin: 2% 0;
-    min-width: 20%;
-    max-width: 30%;
-    min-height: 20vw;
+    flex-basis: 30%;
 }
 
 .card-title {
@@ -201,9 +199,6 @@ body {
     background-color: white;
 }
 
-.card-img {
-    min-height: 30vh;
-}
 .hover-card {
   transition: transform 0.3s ease-in-out;
 }
@@ -216,6 +211,9 @@ text-decoration: none;
   transform: scale(1.05); /* Increase the size by 5% when hovering */
 }
 
+.card-img-mvc {
+padding-top: 5%;
+}
 /* contact section */
 
 .contact-message {
